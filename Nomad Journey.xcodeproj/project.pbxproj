@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7044DB832AACA7A700E9875B /* NomadJourneyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7044DB822AACA7A700E9875B /* NomadJourneyPackage */; };
+		70E277EF2AA8895A005F5CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70E277EE2AA8895A005F5CC0 /* GoogleService-Info.plist */; };
+		70FCC26D2A750A1800D14130 /* Nomad_JourneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCC26C2A750A1800D14130 /* Nomad_JourneyApp.swift */; };
+		70FCC26F2A750A1800D14130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCC26E2A750A1800D14130 /* ContentView.swift */; };
+		70FCC2712A750A1900D14130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FCC2702A750A1900D14130 /* Assets.xcassets */; };
+		70FCC2742A750A1900D14130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FCC2732A750A1900D14130 /* Preview Assets.xcassets */; };
+		70FCC27E2A750A1900D14130 /* Nomad_JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCC27D2A750A1900D14130 /* Nomad_JourneyTests.swift */; };
+		70FCC2882A750A1900D14130 /* Nomad_JourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCC2872A750A1900D14130 /* Nomad_JourneyUITests.swift */; };
+		70FCC28A2A750A1900D14130 /* Nomad_JourneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCC2892A750A1900D14130 /* Nomad_JourneyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70FCC27A2A750A1900D14130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FCC2612A750A1800D14130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FCC2682A750A1800D14130;
+			remoteInfo = "Nomad Journey";
+		};
+		70FCC2842A750A1900D14130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FCC2612A750A1800D14130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FCC2682A750A1800D14130;
+			remoteInfo = "Nomad Journey";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7049AAEA2A7525950056277F /* NomadJourneyPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NomadJourneyPackage; sourceTree = "<group>"; };
+		70E277EE2AA8895A005F5CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70FCC2692A750A1800D14130 /* Nomad Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nomad Journey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FCC26C2A750A1800D14130 /* Nomad_JourneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomad_JourneyApp.swift; sourceTree = "<group>"; };
+		70FCC26E2A750A1800D14130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70FCC2702A750A1900D14130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FCC2732A750A1900D14130 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70FCC2792A750A1900D14130 /* Nomad JourneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nomad JourneyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FCC27D2A750A1900D14130 /* Nomad_JourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomad_JourneyTests.swift; sourceTree = "<group>"; };
+		70FCC2832A750A1900D14130 /* Nomad JourneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nomad JourneyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FCC2872A750A1900D14130 /* Nomad_JourneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomad_JourneyUITests.swift; sourceTree = "<group>"; };
+		70FCC2892A750A1900D14130 /* Nomad_JourneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomad_JourneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70FCC2662A750A1800D14130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7044DB832AACA7A700E9875B /* NomadJourneyPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC2762A750A1900D14130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC2802A750A1900D14130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7049AAE92A7525950056277F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7049AAEA2A7525950056277F /* NomadJourneyPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		7049AAEC2A7526450056277F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70FCC2602A750A1800D14130 = {
+			isa = PBXGroup;
+			children = (
+				70FCC26B2A750A1800D14130 /* Nomad Journey */,
+				70FCC27C2A750A1900D14130 /* Nomad JourneyTests */,
+				70FCC2862A750A1900D14130 /* Nomad JourneyUITests */,
+				70FCC26A2A750A1800D14130 /* Products */,
+				7049AAE92A7525950056277F /* Packages */,
+				7049AAEC2A7526450056277F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70FCC26A2A750A1800D14130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70FCC2692A750A1800D14130 /* Nomad Journey.app */,
+				70FCC2792A750A1900D14130 /* Nomad JourneyTests.xctest */,
+				70FCC2832A750A1900D14130 /* Nomad JourneyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70FCC26B2A750A1800D14130 /* Nomad Journey */ = {
+			isa = PBXGroup;
+			children = (
+				70FCC26C2A750A1800D14130 /* Nomad_JourneyApp.swift */,
+				70E277EE2AA8895A005F5CC0 /* GoogleService-Info.plist */,
+				70FCC26E2A750A1800D14130 /* ContentView.swift */,
+				70FCC2702A750A1900D14130 /* Assets.xcassets */,
+				70FCC2722A750A1900D14130 /* Preview Content */,
+			);
+			path = "Nomad Journey";
+			sourceTree = "<group>";
+		};
+		70FCC2722A750A1900D14130 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				70FCC2732A750A1900D14130 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70FCC27C2A750A1900D14130 /* Nomad JourneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				70FCC27D2A750A1900D14130 /* Nomad_JourneyTests.swift */,
+			);
+			path = "Nomad JourneyTests";
+			sourceTree = "<group>";
+		};
+		70FCC2862A750A1900D14130 /* Nomad JourneyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70FCC2872A750A1900D14130 /* Nomad_JourneyUITests.swift */,
+				70FCC2892A750A1900D14130 /* Nomad_JourneyUITestsLaunchTests.swift */,
+			);
+			path = "Nomad JourneyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70FCC2682A750A1800D14130 /* Nomad Journey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FCC28D2A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad Journey" */;
+			buildPhases = (
+				70FCC2652A750A1800D14130 /* Sources */,
+				70FCC2662A750A1800D14130 /* Frameworks */,
+				70FCC2672A750A1800D14130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nomad Journey";
+			packageProductDependencies = (
+				7044DB822AACA7A700E9875B /* NomadJourneyPackage */,
+			);
+			productName = "Nomad Journey";
+			productReference = 70FCC2692A750A1800D14130 /* Nomad Journey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70FCC2782A750A1900D14130 /* Nomad JourneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FCC2902A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad JourneyTests" */;
+			buildPhases = (
+				70FCC2752A750A1900D14130 /* Sources */,
+				70FCC2762A750A1900D14130 /* Frameworks */,
+				70FCC2772A750A1900D14130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FCC27B2A750A1900D14130 /* PBXTargetDependency */,
+			);
+			name = "Nomad JourneyTests";
+			productName = "Nomad JourneyTests";
+			productReference = 70FCC2792A750A1900D14130 /* Nomad JourneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70FCC2822A750A1900D14130 /* Nomad JourneyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FCC2932A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad JourneyUITests" */;
+			buildPhases = (
+				70FCC27F2A750A1900D14130 /* Sources */,
+				70FCC2802A750A1900D14130 /* Frameworks */,
+				70FCC2812A750A1900D14130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FCC2852A750A1900D14130 /* PBXTargetDependency */,
+			);
+			name = "Nomad JourneyUITests";
+			productName = "Nomad JourneyUITests";
+			productReference = 70FCC2832A750A1900D14130 /* Nomad JourneyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70FCC2612A750A1800D14130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					70FCC2682A750A1800D14130 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					70FCC2782A750A1900D14130 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 70FCC2682A750A1800D14130;
+					};
+					70FCC2822A750A1900D14130 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 70FCC2682A750A1800D14130;
+					};
+				};
+			};
+			buildConfigurationList = 70FCC2642A750A1800D14130 /* Build configuration list for PBXProject "Nomad Journey" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70FCC2602A750A1800D14130;
+			productRefGroup = 70FCC26A2A750A1800D14130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70FCC2682A750A1800D14130 /* Nomad Journey */,
+				70FCC2782A750A1900D14130 /* Nomad JourneyTests */,
+				70FCC2822A750A1900D14130 /* Nomad JourneyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70FCC2672A750A1800D14130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E277EF2AA8895A005F5CC0 /* GoogleService-Info.plist in Resources */,
+				70FCC2742A750A1900D14130 /* Preview Assets.xcassets in Resources */,
+				70FCC2712A750A1900D14130 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC2772A750A1900D14130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC2812A750A1900D14130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70FCC2652A750A1800D14130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FCC26F2A750A1800D14130 /* ContentView.swift in Sources */,
+				70FCC26D2A750A1800D14130 /* Nomad_JourneyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC2752A750A1900D14130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FCC27E2A750A1900D14130 /* Nomad_JourneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FCC27F2A750A1900D14130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FCC2882A750A1900D14130 /* Nomad_JourneyUITests.swift in Sources */,
+				70FCC28A2A750A1900D14130 /* Nomad_JourneyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70FCC27B2A750A1900D14130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FCC2682A750A1800D14130 /* Nomad Journey */;
+			targetProxy = 70FCC27A2A750A1900D14130 /* PBXContainerItemProxy */;
+		};
+		70FCC2852A750A1900D14130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FCC2682A750A1800D14130 /* Nomad Journey */;
+			targetProxy = 70FCC2842A750A1900D14130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		70FCC28B2A750A1900D14130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70FCC28C2A750A1900D14130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70FCC28E2A750A1900D14130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20230909001;
+				DEVELOPMENT_ASSET_PATHS = "\"Nomad Journey/Preview Content\"";
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C625QPFG8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-Journey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = manual;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70FCC28F2A750A1900D14130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20230909001;
+				DEVELOPMENT_ASSET_PATHS = "\"Nomad Journey/Preview Content\"";
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C625QPFG8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-Journey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = manual;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		70FCC2912A750A1900D14130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-JourneyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nomad Journey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nomad Journey";
+			};
+			name = Debug;
+		};
+		70FCC2922A750A1900D14130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-JourneyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nomad Journey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nomad Journey";
+			};
+			name = Release;
+		};
+		70FCC2942A750A1900D14130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-JourneyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nomad Journey";
+			};
+			name = Debug;
+		};
+		70FCC2952A750A1900D14130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C625QPFG8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arrinal.Nomad-JourneyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nomad Journey";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70FCC2642A750A1800D14130 /* Build configuration list for PBXProject "Nomad Journey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FCC28B2A750A1900D14130 /* Debug */,
+				70FCC28C2A750A1900D14130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FCC28D2A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad Journey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FCC28E2A750A1900D14130 /* Debug */,
+				70FCC28F2A750A1900D14130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FCC2902A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad JourneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FCC2912A750A1900D14130 /* Debug */,
+				70FCC2922A750A1900D14130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FCC2932A750A1900D14130 /* Build configuration list for PBXNativeTarget "Nomad JourneyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FCC2942A750A1900D14130 /* Debug */,
+				70FCC2952A750A1900D14130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7044DB822AACA7A700E9875B /* NomadJourneyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NomadJourneyPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 70FCC2612A750A1800D14130 /* Project object */;
+}

@@ -1,0 +1,30 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and distribute the app to Firebase"
+  lane :distribute do
+    build_app(
+      project: "Nomad Journey.xcodeproj", 
+      configuration: "Debug",
+      scheme: "Nomad Journey",
+      export_method: "development",
+  		export_options: {
+        provisioningProfiles: {
+        "com.arrinal.Nomad-Journey" => "manual"
+      }
+    }
+    )
+    version = get_version_number(
+      xcodeproj: "Nomad Journey.xcodeproj", 
+      target: "Nomad Journey"
+    )
+    build_number = get_build_number(xcodeproj: "Nomad Journey.xcodeproj")
+    changelog = File.read("../release-note.txt")
+    firebase_app_distribution(
+      app: ENV["FIREBASE_APP_ID"],
+      firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
+      groups: "tester",
+      release_notes: changelog
+    )
+  end
+end
