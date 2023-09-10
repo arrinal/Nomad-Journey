@@ -63,7 +63,7 @@ jobs:
           FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
 
       - name: Notify Slack
-        run: fastlane notify_slack
+        run: fastlane notify_slack build_failed:${{ env.BUILD_FAILED }}
         env:
           FAD_LINK: ${{ secrets.FAD_LINK }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
