@@ -32,9 +32,14 @@ platform :ios do
       success: true,
       payload: { 
         "Build Date" => Time.new.to_s,
-        "Built by" => "Fastlane"
+        "Built by" => `git log --format='%an' -n 1`.strip
       },
-      default_payloads: [:lane, :test_result, :git_branch, :last_git_commit]
+      attachments: [{
+          "fallback" => "You can download the build on Firebase here.",
+          "text" => "<https://appdistribution.firebase.google.com/testerapps/1:925263839084:ios:ae87973077f40eccedfd49|Click here to download the build on Firebase>",
+          "color" => "#36a64f",
+          "pretext" => "Firebase Build"
+      }]
     )
 
   end
