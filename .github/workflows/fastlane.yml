@@ -1,5 +1,7 @@
 name: iOS Distribute
 on:
+  pull_request:
+    types: [closed]
   push:
     branches:
       - master
@@ -7,7 +9,7 @@ on:
 jobs:
   build_with_signing:
     runs-on: macos-latest
-
+    if: github.event.pull_request.merged == true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -51,13 +53,15 @@ jobs:
           gem install fastlane
 
       - name: Set PR Title as Env Var
-        env:
-          PR_TITLE: ""
         run: echo "PR_TITLE=${{ github.event.pull_request.title }}" >> $GITHUB_ENV
 
       - name: Build app
+        continue-on-error: true
         run: fastlane distribute --verbose
         env:
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
           FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Notify Slack
+        run: fastlane notify_slack status:${{ job.status }}
