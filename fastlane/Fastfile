@@ -26,5 +26,16 @@ platform :ios do
       groups: "tester",
       release_notes: changelog
     )
+    slack(
+      slack_url: ENV["SLACK_WEBHOOK_URL"],
+      message: "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\nChangelog:\n#{changelog}",
+      success: true,
+      payload: { 
+        "Build Date" => Time.new.to_s,
+        "Built by" => "Fastlane"
+      },
+      default_payloads: [:lane, :test_result, :git_branch, :last_git_commit]
+    )
+
   end
 end
