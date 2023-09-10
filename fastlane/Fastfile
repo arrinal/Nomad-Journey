@@ -20,26 +20,27 @@ platform :ios do
     )
     build_number = get_build_number(xcodeproj: "Nomad Journey.xcodeproj")
     changelog = File.read("../release-note.txt")
+    changelog = changelog.empty? ? "NULL" : changelog
     firebase_app_distribution(
       app: ENV["FIREBASE_APP_ID"],
       firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
       groups: "tester",
       release_notes: changelog
     )
+    build_date = Time.new.getlocal('+07:00').strftime('%Y-%m-%d %H:%M:%S %Z')
     slack(
       slack_url: ENV["SLACK_WEBHOOK_URL"],
-      message: "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\nChangelog:\n#{changelog}",
+      message: "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<https://appdistribution.firebase.google.com/testerapps/1:925263839084:ios:ae87973077f40eccedfd49|Download Now>\nChangelog:\n#{changelog}",
       success: true,
       payload: { 
-        "Build Date" => Time.new.to_s,
+        "Build Date" => build_date,
         "Built by" => `git log --format='%an' -n 1`.strip
       },
-      attachments: [{
-          "fallback" => "You can download the build on Firebase here.",
-          "text" => "<https://appdistribution.firebase.google.com/testerapps/1:925263839084:ios:ae87973077f40eccedfd49|Click here to download the build on Firebase>",
-          "color" => "#36a64f",
-          "pretext" => "Firebase Build"
-      }]
+      attachment_properties: {
+      fallback: "Build information",
+      color: "#36a64f",
+      pretext: "Firebase Build"
+  }
     )
 
   end
