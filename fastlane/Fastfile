@@ -26,7 +26,6 @@ platform :ios do
 
   desc "Notify Slack"
   lane :notify_slack do
-    build_status = options[:status]
     version = get_version_number(
       xcodeproj: "Nomad Journey.xcodeproj", 
       target: "Nomad Journey"
