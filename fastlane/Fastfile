@@ -32,7 +32,6 @@ platform :ios do
     )
     build_number = get_build_number(xcodeproj: "Nomad Journey.xcodeproj")
     build_date = Time.new.getlocal('+07:00').strftime('%Y-%m-%d %H:%M:%S %Z')
-    last_exit_status = last_git_commit[:exit_status].to_i
     if last_exit_status == 0
       message = "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<#{ENV["FAD_LINK"]}|Download Now>\nChangelog:\n#{ENV["PR_TITLE"]}"
       success = true
