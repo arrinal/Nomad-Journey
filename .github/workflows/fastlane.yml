@@ -5,6 +5,9 @@ on:
       - master
     types:
       - closed
+  push:
+    branches:
+      - master
 
 jobs:
   build_with_signing:
