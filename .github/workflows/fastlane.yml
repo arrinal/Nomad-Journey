@@ -57,7 +57,7 @@ jobs:
 
       - name: Build app
         continue-on-error: true
-        run: fastlane distribute --verbose
+        run: fastlane distribute --verbose || echo "BUILD_FAILED=true" >> $GITHUB_ENV
         env:
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
           FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}

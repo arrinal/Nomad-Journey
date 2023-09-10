@@ -25,19 +25,19 @@ platform :ios do
   end
 
   desc "Notify Slack"
-  lane :notify_slack do
+  lane :notify_slack do |options|
     version = get_version_number(
       xcodeproj: "Nomad Journey.xcodeproj", 
       target: "Nomad Journey"
     )
     build_number = get_build_number(xcodeproj: "Nomad Journey.xcodeproj")
     build_date = Time.new.getlocal('+07:00').strftime('%Y-%m-%d %H:%M:%S %Z')
-    if last_exit_status == 0
-      message = "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<#{ENV["FAD_LINK"]}|Download Now>\nChangelog:\n#{ENV["PR_TITLE"]}"
-      success = true
-    else
+    if options[:build_failed] == "true"
       message = "Build #{version} (#{build_number}) failed: #{ENV["PR_TITLE"]}"
       success = false
+    else
+      message = "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<#{ENV["FAD_LINK"]}|Download Now>\nChangelog:\n#{ENV["PR_TITLE"]}"
+      success = true
     end
 
     slack(
