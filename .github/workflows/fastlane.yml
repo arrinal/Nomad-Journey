@@ -50,6 +50,9 @@ jobs:
         run: |
           gem install fastlane
 
+      - name: Set PR Title as Env Var
+        run: echo "PR_TITLE=${{ github.event.pull_request.title }}" >> $GITHUB_ENV
+
       - name: Build app
         run: fastlane distribute --verbose
         env:

@@ -30,17 +30,13 @@ platform :ios do
     build_date = Time.new.getlocal('+07:00').strftime('%Y-%m-%d %H:%M:%S %Z')
     slack(
       slack_url: ENV["SLACK_WEBHOOK_URL"],
-      message: "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<https://appdistribution.firebase.google.com/testerapps/1:925263839084:ios:ae87973077f40eccedfd49|Download Now>\nChangelog:\n#{changelog}",
+      message: "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<https://appdistribution.firebase.google.com/testerapps/1:925263839084:ios:ae87973077f40eccedfd49|Download Now>\nChangelog:\n#{ENV["PR_TITLE"]}",
       success: true,
       payload: { 
         "Build Date" => build_date,
         "Built by" => `git log --format='%an' -n 1`.strip
       },
-      attachment_properties: {
-      fallback: "Build information",
-      color: "#36a64f",
-      pretext: "Firebase Build"
-  }
+      default_payloads: []
     )
 
   end
