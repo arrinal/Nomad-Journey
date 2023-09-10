@@ -33,10 +33,10 @@ platform :ios do
     build_number = get_build_number(xcodeproj: "Nomad Journey.xcodeproj")
     build_date = Time.new.getlocal('+07:00').strftime('%Y-%m-%d %H:%M:%S %Z')
     if options[:build_failed] == true
-      message = "Build #{version} (#{build_number}) failed: #{ENV["PR_TITLE"]}"
+      message = "Build #{version} (#{build_number}) failed: #{ENV["COMMIT_MESSAGE"]}"
       success = false
     else
-      message = "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<#{ENV["FAD_LINK"]}|Download Now>\nChangelog:\n#{ENV["PR_TITLE"]}"
+      message = "Build #{version} (#{build_number}) has been distributed to Firebase successfully!\n<#{ENV["FAD_LINK"]}|Download Now>\nChangelog:\n#{ENV["COMMIT_MESSAGE"]}"
       success = true
     end
 
