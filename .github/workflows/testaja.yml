@@ -17,6 +17,11 @@ jobs:
       - name: Print Environment Variable BAJIGUR
         run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }}"
       - name: replace BAJIGUR
-        run: echo "BAJIGUR=some_new_value" >> $GITHUB_ENV
+        run: echo "tokgleksome_new_value" >> ${{ vars.BAJIGUR }}
+      - name: update var
+        run: |
+            gh variable list
+            gh variable set BAJIGUR --body "Set from workflow"
+            gh variable list
       - name: Print terbaru Variable BAJIGUR
         run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }}"
