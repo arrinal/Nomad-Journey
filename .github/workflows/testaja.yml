@@ -1,4 +1,4 @@
-name: iOS Distribute
+name: Ngetes Aja
 
 on:
   workflow_dispatch:
@@ -11,9 +11,10 @@ on:
 jobs:
   build_and_distribute:
     runs-on: ubuntu-latest
-    # environment: test
     environment: 
       name: test
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
       - name: Print Environment Variable ADUH
-        run: echo "Nilai ADUH adalah ${{ env.ADUH }}"
+        run: echo "Nilai ADUH adalah $ADUH"
