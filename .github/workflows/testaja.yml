@@ -10,39 +10,13 @@ on:
 
 jobs:
   build_and_distribute:
-    runs-on: self-hosted
+    runs-on: macos-latest
+    # environment: test
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Print before
+        run: echo "Nilai before adalah ${{ env.ADUH }}"
+      - name: Modify Environment Variable
+        run: echo "ADUH=ubah" >> $GITHUB_ENV
 
-      - name: Generate XCConfig
-        run: ./generate-xcconfig-runner.sh
-
-      - name: Install pod
-        run: pod install
-
-      - name: Pull latest current branch
-        run: |
-          git config user.name 'GitHub Actions KPM-iOS'
-          git config user.email 'github-actions@example.com'
-          git fetch
-          git pull
-
-      - name: Build app
-        run: |
-          if [ "${{ github.event.inputs.environment }}" = "dev" ]; then
-            fastlane dev --verbose
-          elif [ "${{ github.event.inputs.environment }}" = "prod" ]; then
-            fastlane prod --verbose
-          else
-            echo "Environment not recognized!"
-            exit 1
-          fi
-
-      - name: Commit and push version number
-        run: |
-          version_number=$(cat version_number.txt)
-          build_number=$(cat build_number.txt)
-          git add "Kredit Plus Mobile v2/Configurations/Info.plist"
-          git commit -m "Increment version number $version_number ($build_number)"
-          git push
+      - name: Print after
+        run: echo "Nilai ADUH yang diubah adalah ${{ env.ADUH }}"
