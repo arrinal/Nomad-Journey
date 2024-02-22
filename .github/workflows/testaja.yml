@@ -10,13 +10,10 @@ on:
 
 jobs:
   build_and_distribute:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     # environment: test
+    environment: 
+      name: test
     steps:
-      - name: Print before
-        run: echo "Nilai before adalah ${{ vars.ADUH }}"
-      - name: Modify Environment Variable
-        run: echo "ADUH=ubah" >> $GITHUB_ENV
-
-      - name: Print after
-        run: echo "Nilai ADUH yang diubah adalah ${{ vars.ADUH }}"
+      - name: Print Environment Variable ADUH
+        run: echo "Nilai ADUH adalah ${{ env.ADUH }}"
