@@ -15,4 +15,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah ${{ env.BAJIGUR }}"
+        run: echo "Nilai BAJIGUR adalah ${{ env.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
+      
+      - name: Print Environment Variable BAJIGUR
+        run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
+      
+      - name: Print Environment Variable BAJIGUR
+        run: echo "Nilai BAJIGUR adalah ${{ secrets.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
+      
+      - name: Print Environment Variable BAJIGUR
+        run: echo "Nilai BAJIGUR adalah $BAJIGUR | ${{ secrets.FAD_LINK }}
+        
+      - name: Print Environment Variable BAJIGUR
+        run: echo "Nilai BAJIGUR adalah ${BAJIGUR} | ${{ secrets.FAD_LINK }}"
