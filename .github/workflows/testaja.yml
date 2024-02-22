@@ -11,10 +11,8 @@ on:
 jobs:
   build_and_distribute:
     runs-on: macos-latest
-    environment: 
-      name: test
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      - name: Print Environment Variable ADUH
-        run: echo "Nilai ADUH adalah $ADUH"
+      - name: Print Environment Variable BAJIGUR
+        run: echo "Nilai BAJIGUR adalah ${{ env.BAJIGUR }}"
