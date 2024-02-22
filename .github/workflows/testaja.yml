@@ -14,9 +14,9 @@ jobs:
     # environment: test
     steps:
       - name: Print before
-        run: echo "Nilai before adalah ${{ env.ADUH }}"
+        run: echo "Nilai before adalah $ADUH"
       - name: Modify Environment Variable
-        run: echo "ADUH=ubah" >> $GITHUB_ENV
+        run: echo "ADUH=GANTOOSSS" >> $GITHUB_ENV
 
       - name: Print after
-        run: echo "Nilai ADUH yang diubah adalah ${{ env.ADUH }}"
+        run: echo "Nilai ADUH yang diubah adalah $ADUH"
