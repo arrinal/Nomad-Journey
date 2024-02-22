@@ -13,18 +13,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah ${{ env.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
-      
-      - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
-      
-      - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah ${{ secrets.BAJIGUR }} | ${{ secrets.FAD_LINK }}"
-      
-      - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah $BAJIGUR | ${{ secrets.FAD_LINK }}
-        
-      - name: Print Environment Variable BAJIGUR
-        run: echo "Nilai BAJIGUR adalah ${BAJIGUR} | ${{ secrets.FAD_LINK }}"
+        run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }} | ${{ secrets.FAD_LINK }}
