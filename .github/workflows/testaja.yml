@@ -19,7 +19,7 @@ jobs:
       - name: Print Environment Variable BAJIGUR
         run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }}"
       - name: Update release notes
-        run: echo "${{ github.event.inputs.releaseNotes }}" | sed 's/\\n/ /g' > release-note.txt
+        run: echo "${{ github.event.inputs.releaseNotes }}" | sed 's/\\n/PULIHLAH/g' > release-note.txt
       - name: Print release notes
         run: cat release-note.txt
       - name: update var
