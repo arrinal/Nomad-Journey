@@ -31,3 +31,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_AING }}
       - name: Print terbaru Variable BAJIGUR
         run: echo "Nilai BAJIGUR adalah ${{ vars.BAJIGUR }}"
+      - name: Create Release Info File
+        run: |
+          echo "Environment: ${{ github.event.inputs.environment }}" > release_info.txt
+          echo "Release Notes: ${{ github.event.inputs.releaseNotes }}" >> release_info.txt
+      - name: Upload Release Info as Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: release-info
+          path: release_info.txt
